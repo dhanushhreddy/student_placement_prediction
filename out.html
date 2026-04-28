@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT - PLACEMENT PREDICTION</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-bg">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">PREDICT<span>.AI</span></h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                </ul>
+            </div>
+        </div> 
+
+        <div class="container">
+            <div class="result-card">
+                <h1>Prediction <span>Outcome</span></h1>
+                
+                <div class="output-box">
+                    <div class="status-wrapper">
+                        <p class="label">Placement Status</p>
+                        <p class="status">{{ output }}</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="salary-wrapper">
+                        <p class="label">Estimated Annual Salary</p>
+                        <p class="salary">₹{{ output2 }}</p>
+                    </div>
+                </div>
+
+                <div class="action-area">
+                    <p class="disclaimer">*Predictions are based on historical placement data and ML algorithms.</p>
+                    <a href="/index" class="btn-back">Predict Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
