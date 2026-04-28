@@ -25,4 +25,3 @@ This is a Machine Learning-based web application that predicts the likelihood of
 2. Install dependencies: `pip install flask pandas scikit-learn`.
 3. Run the app: `python app.py`.
 4. Open `http://127.0.0.1:5000` in your browser.
-5.
